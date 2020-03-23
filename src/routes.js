@@ -22,7 +22,9 @@ const ButtonDropdowns = React.lazy(() => import('./views/Buttons/ButtonDropdowns
 const ButtonGroups = React.lazy(() => import('./views/Buttons/ButtonGroups'));
 const Buttons = React.lazy(() => import('./views/Buttons/Buttons'));
 const Charts = React.lazy(() => import('./views/Charts'));
+
 const Dashboard = React.lazy(() => import('./views/Dashboard'));
+
 const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
 const Flags = React.lazy(() => import('./views/Icons/Flags'));
 const FontAwesome = React.lazy(() => import('./views/Icons/FontAwesome'));
@@ -35,12 +37,16 @@ const Typography = React.lazy(() => import('./views/Theme/Typography'));
 const Widgets = React.lazy(() => import('./views/Widgets/Widgets'));
 const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User'));
+
 const ajoutpatient = React.lazy(() => import('./views/secretaire/ajoutpatient'));
 const listepatient = React.lazy(() => import('./views/secretaire/listepatient'));
 const ajoutrendezvous = React.lazy(() => import('./views/secretaire/ajoutrendezvous'));
 const listerendezvous = React.lazy(() => import('./views/secretaire/listerendezvous'));
-//const listerendezvous = React.lazy(() => import('./views/medecin/listerendezvous'));
-//const listepatient = React.lazy(() => import('./views/medecin/listepatient'));
+
+const listerendezvous1 = React.lazy(() => import('./views/medecin/listerendezvous'));
+const listepatient1 = React.lazy(() => import('./views/medecin/listepatient'));
+
+
 const modal = React.lazy(() => import('./views/secretaire/Modal'));
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
@@ -89,8 +95,10 @@ const routes = [
   { path: '/home/listepatient', exact: true, name: 'liste patient', component: listepatient },
   { path: '/home/ajoutrendezvous', exact: true, name: 'ajout rendezvous', component: ajoutrendezvous },
   { path: '/home/listerendezvous', exact: true, name: 'liste rendezvous', component: listerendezvous },
- // { path: '/home/listepatient', exact: true, name: 'listepatient', component: listepatient },
- // { path: '/home/listerendezvous', exact: true, name: 'liste rendezvous', component: listerendezvous },
+
+
+  { path: '/home/listepatient1', exact: true, name: 'listepatient', component: listepatient1 },
+  { path: '/home/listerendezvous1q', exact: true, name: 'liste rendezvous', component: listerendezvous1 },
  { path: '/home/modal', exact: true, name: 'modal', component: modal },
 ];
 

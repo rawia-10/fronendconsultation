@@ -17,7 +17,7 @@ class Login extends Component {
     let err = this.validate();
     if (!err) {
       console.log("state ", this.state);
-      axios.post("http://localhost:3017/user/authentification", {
+      axios.post("http://localhost:3017/medecin/authentification", {
         email: this.state.email,
         password: this.state.password
       })
@@ -28,7 +28,7 @@ class Login extends Component {
           }
           else {
             alert("Done ! ");
-            window.location.href = "/#/home/listepatient"
+            window.location.href = "/#/home"
           }
         })
     }

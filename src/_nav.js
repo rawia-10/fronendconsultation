@@ -2,7 +2,7 @@ export default {
   items: [
     {
       name: 'Secrétaire',
-      url: '/dashboard',
+      url: '/Home',
       icon: 'icon-speedometer',
       
     },

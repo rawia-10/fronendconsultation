@@ -2,13 +2,13 @@ export default {
   items: [
     {
       name: 'admin',
-      url: '/dashboard',
+      url: '/admin/home',
       icon: 'icon-speedometer',
       
     },
    
     {
-      name: 'medecin',
+      name: 'admin',
       url: '/base',
       icon: 'icon-puzzle',
       children: [

@@ -1,8 +1,8 @@
 export default {
   items: [
     {
-      name: 'Secrétaire',
-      url: '/dashboard',
+      name: 'Home',
+      url: '/medecin/home',
       icon: 'icon-speedometer',
       
     },
@@ -14,12 +14,12 @@ export default {
       children: [
         {
           name: 'Liste patient ',
-          url: '/home/listepatient',
+          url: '/home/listepatient1',
           icon: 'icon-puzzle',
         },
         {
-          name: 'Ajout patient',
-          url: '/home/ajoutpatient',
+          name: 'liste rendezvous',
+          url: '/home/rendezvous1',
           icon: 'icon-puzzle',
         },
       
